@@ -1,0 +1,31 @@
+
+/*layout & hide show start*/
+.header, .hero, .body, .bar5, .footer{
+	background-color: teal;
+	margin-bottom: 10px;
+}
+
+.box{
+	min-height: 80px;
+	background-color: red;
+	margin: 10px 0;
+	font-size: 30px;
+	color: #ffffff;
+}
+
+.red{
+	background-color: lime;
+}
+
+.five{
+	background-color: blue;
+}
+/* layout & hide show end*/
+
+.back{
+	height: 722px;
+}
+.cap{
+	padding-bottom: 170px;
+	color: #000000;
+}

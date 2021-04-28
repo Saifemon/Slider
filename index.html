@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Carousel Slider</title>
+  </head>
+  <body>
+<header>
+	<div class="container-fluid bg-success p-md-3">
+		<div class="row ">
+			<div class="col-md-12 d-grid justify-content-center">
+				<a class="btn btn-outline-warning" href="layout&hideshow.html" role="button">Layout & Hide Show</a>
+			</div>
+		</div>
+	</div>
+</header>
+<!--Sliders only start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mb-0 p-3">This is Carousel Slider Only</h2>
+		<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner back" >
+            <div class="carousel-item active">
+              <img src="images/business2.jpg" class="d-block w-100" alt="Business2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/business3.jpg" class="d-block w-100" alt="Business3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/business5.jpg" class="d-block w-100" alt="Business5">
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+<!--Sliders only end-->
+
+<!--Slider with controls start-->
+<section>
+	<div class="container">
+
+		<h2 class="bg-danger text-white mt-2 mb-0 p-3">This is Carousel Slider with Controls</h2>
+		<div id="cControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner back" >
+            <div class="carousel-item active">
+              <img src="images/business1.jpg" class="d-block w-100" alt="Business1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/business4.jpg" class="d-block w-100" alt="Business4">
+            </div>
+            <div class="carousel-item">
+              <img src="images/business6.jpg" class="d-block w-100" alt="Business6">
+            </div>
+          </div>
+          <!--carousel button start-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#cControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#cControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!--carousel button end-->
+        </div>
+
+	</div>
+</section>
+<!--Slider with controls end-->
+
+<!--Slider with caption start-->
+<section>
+	<div class="container">
+
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Carousel Slider with Controls</h2>
+		<div id="caption" class="carousel slide carousel-fade" data-bs-ride="carousel">
+	      <div class="carousel-indicators">
+               <button type="button" data-bs-target="#caption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#caption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#caption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner back">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="images/business1.jpg" class="d-block w-100" alt="Business1">
+              <div class="carousel-caption d-none d-md-block cap">
+              	<h3>First slide label</h3>
+              	<p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="images/business4.jpg" class="d-block w-100" alt="Business4">
+              <div class="carousel-caption d-none d-md-block cap">
+              	<h3>Second slide label</h3>
+              	<p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/business2.jpg" class="d-block w-100" alt="Business2">
+              <div class="carousel-caption d-none d-md-block cap">
+              	<h3>Third slide label</h3>
+              	<p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <!--carousel button start-->
+          <button class="carousel-control-prev" type="button" data-bs-target="#caption" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#caption" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!--carousel button end-->
+        </div>
+
+	</div>
+</section>
+<!--Slider with caption end-->
+
+<!--nabs & tabs start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Nabs & Tabs</h2>
+		<ul class="nav mb-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <nav class="nav">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </nav>
+        <ul class="nav mb-4 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <ul class="nav mb-4 flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <ul class="nav mb-4 nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <ul class="nav mb-4 nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+	</div>
+</section>
+<!--nabs & tabs end-->
+
+<!--Offcanvas components start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Offcanvas</h2>
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" data-bs-backdrop="false" data-bs-scroll="true">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+          Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+          </div>
+        </div>
+
+        <!--live demo-->
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offCex" role="button" aria-controls="offCex">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offCex" aria-controls="offCex">
+          Button with data-bs-target
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offCex" aria-labelledby="offCexLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offCexLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdmbutton" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdmbutton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+	</div>
+</section>
+<!--Offcanvas components end-->
+
+<!--pegination start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Pegination</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<nav aria-label="...">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+			</div>
+			<nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+		</div>
+	</div>
+</section>
+<!--pegination end-->
+
+<!--Scrollspy start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Scrollspy</h2>
+		<nav id="navbar-exm2" class="navbar navbar-light bg-light px-3">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#fat">@fat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mdo">@mdo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#one">one</a></li>
+                <li><a class="dropdown-item" href="#two">two</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#three">three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-exm2" data-bs-offset="0" tabindex="0">
+          <h4 id="fat">@fat</h4>
+          <p>Placeholder content for the scrollspy example. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima maiores eligendi, culpa nobis officia sapiente repellat aut facilis placeat ducimus voluptas itaque earum consequuntur. Vero omnis totam officia explicabo sequi distinctio rem voluptatem adipisci impedit mollitia eum aliquid quaerat, facere atque harum quos, excepturi at, perferendis qui ipsa, aspernatur deleniti.</p>
+          <h4 id="mdo">@mdo</h4>
+          <p>Placeholder content for the scrollspy example. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Ipsum corrupti nisi similique, ipsam temporibus aut. Veniam molestias eveniet ut quibusdam dignissimos ab labore eum asperiores, rem consequuntur, assumenda, quod. Ea officia reiciendis maiores inventore praesentium laudantium doloribus, molestias voluptatibus. Aut, debitis. Tempora ab, recusandae sequi, corporis fugit magnam. Dolor fugit molestiae amet. Soluta cum perferendis mollitia provident hic eligendi ullam vel suscipit animi dolor ad, amet dolores nemo laudantium dolorum similique quod, nobis debitis cupiditate explicabo inventore illum. Minima neque dolorum, cum quod officia ut recusandae, soluta dolorem laboriosam in facere. Voluptates possimus mollitia magnam reprehenderit vero, hic molestias magni. </p>
+          <h4 id="one">one</h4>
+          <p>Placeholder content for the scrollspy example. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex tenetur enim aperiam temporibus quidem pariatur quo ipsa reprehenderit et nam iusto, eius eos fugiat similique repellat magnam dolorem mollitia dolore, est, sapiente molestiae odit. Ut asperiores dolorum quos amet perspiciatis animi iure debitis adipisci deleniti recusandae, quidem delectus exercitationem facilis voluptatum repellendus, ab saepe explicabo non! Nemo quidem mollitia exercitationem minus assumenda, ducimus, dolores veritatis quisquam corporis perferendis delectus accusamus cumque maiores quibusdam, animi eos sunt tempore fugit explicabo quos rerum? Autem laudantium, natus sit esse ducimus asperiores earum at, a veniam architecto, dolor soluta quis repellat, alias odio ipsa optio? Dicta quidem, quibusdam perferendis sit in reprehenderit dolorum aspernatur magnam autem incidunt delectus inventore voluptatem quae consequuntur excepturi sed? Repellat quia officiis aliquid quisquam repudiandae sit, enim fugit sequi, id totam blanditiis eveniet error beatae architecto maiores. Obcaecati maxime, nam corporis aspernatur atque. Reprehenderit ipsa error nostrum, quis suscipit, soluta a eveniet consectetur repellat quas, vero assumenda animi quia eligendi dolorum dignissimos. Modi itaque iure, quibusdam voluptate quo perspiciatis temporibus deleniti quos consectetur id commodi, odit, saepe corporis officia quasi! Nulla esse sit enim fugit nemo quibusdam, modi harum quisquam incidunt saepe similique doloremque porro in aliquam reiciendis ipsam?</p>
+          <h4 id="two">two</h4>
+          <p>Placeholder content for the scrollspy example. It's time to bring out the big balloons. I'm walking, I'm walking on air (tonight). Yeah, we maxed our credit cards and got kicked out of the bar. Yo, shout out to all you kids, buying bottle service, with your rent money. I'm ma get your heart racing in my skin-tight jeans. If you get the chance you better keep her. Yo, shout out to all you kids, buying bottle service, with your rent money.</p>
+          <h4 id="three">three</h4>
+          <p>Placeholder content for the scrollspy example. If you wanna dance, if you want it all, you know that I'm the girl that you should call. Walk through the storm I would. So let me get you in your birthday suit. The one that got away. Last Friday night, yeah I think we broke the law, always say we're gonna stop. 'Cause she's a little bit of Yoko, And she's a little bit of 'Oh no'. I want the jaw droppin', eye poppin', head turnin', body shockin'. Yeah, we maxed our credit cards and got kicked out of the bar.
+
+          And some more placeholder content, for good measure.</p>
+        </div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Scrollspy List</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div id="scrollex" class="list-group">
+                  <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                </div>
+                <div data-bs-spy="scroll" data-bs-target="#scrollex" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                  <h4 id="list-item-1">Item 1</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 1. Don't need apologies. There is no fear now, let go and just be free, I will love you unconditionally. Last Friday night. Don't be a shy kinda guy I'll bet it's beautiful. Summer after high school when we first met. 'Cause she's the muse and the artist. What? Wait. Thought that I was the exception.</p>
+                  <h4 id="list-item-2">Item 2</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 2. Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, you're a firework. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So très chic, yeah, she's a classic.</p>
+                  <h4 id="list-item-3">Item 3</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 3. We go higher and higher. Never one without the other, we made a pact. I'm walking on air. Someone said you had your tattoo removed. Now I’m floating like a butterfly. Tone, tan fit and ready, turn it up cause its gettin' heavy. Cause once you’re mine, once you’re mine. You just gotta ignite the light and let it shine! So we hit the boulevard. Do you ever feel, feel so paper thin. I see it all, I see it now.</p>
+                  <h4 id="list-item-4">Item 4</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 4. Summer after high school when we first met. There is no fear now, let go and just be free, I will love you unconditionally. Sun-kissed skin so hot we'll melt your popsicle. This love will make you levitate.</p>
+                </div>
+			</div>
+			<div class="col-md-6">
+				<div id="scrollex2" class="list-group">
+                  <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-6">Item 6</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-7">Item 7</a>
+                  <a class="list-group-item list-group-item-action" href="#list-item-8">Item 8</a>
+                </div>
+                <div data-bs-spy="scroll" data-bs-target="#scrollex2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                  <h4 id="list-item-5">Item 5</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 1. Don't need apologies. There is no fear now, let go and just be free, I will love you unconditionally. Last Friday night. Don't be a shy kinda guy I'll bet it's beautiful. Summer after high school when we first met. 'Cause she's the muse and the artist. What? Wait. Thought that I was the exception.</p>
+                  <h4 id="list-item-6">Item 6</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 2. Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, you're a firework. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So très chic, yeah, she's a classic.</p>
+                  <h4 id="list-item-7">Item 7</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 3. We go higher and higher. Never one without the other, we made a pact. I'm walking on air. Someone said you had your tattoo removed. Now I’m floating like a butterfly. Tone, tan fit and ready, turn it up cause its gettin' heavy. Cause once you’re mine, once you’re mine. You just gotta ignite the light and let it shine! So we hit the boulevard. Do you ever feel, feel so paper thin. I see it all, I see it now.</p>
+                  <h4 id="list-item-8">Item 8</h4>
+                  <p>Placeholder content for the scrollspy list-group example. This one relates to item 4. Summer after high school when we first met. There is no fear now, let go and just be free, I will love you unconditionally. Sun-kissed skin so hot we'll melt your popsicle. This love will make you levitate.</p>
+                </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Scrollspy end-->
+
+<!--collapse start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Collapse</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<p>
+                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collEx" role="button" aria-expanded="false" aria-controls="collEx">
+                    Link with href
+                  </a>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collEx2" aria-expanded="false" aria-controls="collEx2">
+                    Button with data-bs-target
+                  </button>
+                </p>
+                <div class="collapse" id="collEx">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+                <div class="collapse" id="collEx2">
+                  <div class="card card-body">
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic voluptate quasi ipsa repudiandae temporibus animi iure ipsum quisquam similique, quo distinctio veniam perferendis. At, commodi itaque, tempora perferendis optio molestias aliquam laboriosam cupiditate, soluta possimus quae et reprehenderit dolorum, id! Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto repellat, molestiae alias. Ullam harum commodi a, ratione similique delectus cumque?
+                  </div>
+                </div>
+			</div>
+		</div>
+		<!--collapse 2-->
+		<p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#mCollex1" role="button" aria-expanded="false" aria-controls="mCollex1">Toggle first element</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mCollex2" aria-expanded="false" aria-controls="mCollex2">Toggle second element</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="mCollex1 mCollex2">Toggle both elements</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="mCollex1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="mCollex2">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+<!--collapse end-->
+
+<!--Modal start-->
+<section>
+	<div class="container">
+		<h2 class="bg-danger text-white text-center mt-2 mb-0 p-3">This is Modal</h2>
+		<!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              	<!---->
+              	  <div class="mb-3 row">
+                    <label for="inputemail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputemail" value="email@example.com">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword">
+                    </div>
+                  </div>
+              	<!---->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quae veniam sint illo eius incidunt minima ipsum voluptatibus eaque voluptatum sequi velit ipsam quidem at, doloribus repellat? Ad consequatur eius similique distinctio magnam veritatis est, amet excepturi voluptate. Id assumenda eveniet nulla inventore totam ad necessitatibus in corrupti officiis magnam voluptatem consequuntur nesciunt repudiandae facere sit, magni doloremque doloribus quaerat dolor explicabo officia corporis quae dolorum ratione accusantium. Odit quisquam error voluptatum fugit omnis, reprehenderit minima quam nisi exercitationem porro suscipit quia, recusandae neque dolor vel ex perferendis nam assumenda dolorem placeat. Iure iusto ab ratione repellat omnis quidem dolorem nemo. Ab qui voluptatum fugit, facilis magni ipsum ipsa fugiat libero nulla natus sapiente dignissimos veritatis asperiores nemo obcaecati enim reprehenderit nesciunt aliquam ducimus. Eligendi quidem amet, temporibus perspiciatis dolore ex laborum labore aperiam odio similique assumenda laudantium modi, fugiat ratione, blanditiis voluptate deserunt est vel ducimus sint doloremque cupiditate et consequatur repudiandae possimus! Sit omnis non quidem placeat magnam at eum. Quo quod laudantium velit, asperiores distinctio! Cumque, odio architecto adipisci voluptas, hic a obcaecati cupiditate illo consequatur! Accusamus minus ab harum ipsa adipisci laborum soluta repellendus fuga, aliquam, autem quas nam illo est perspiciatis. Quia iste nobis soluta, omnis ab voluptas eius natus illum corrupti veniam quidem officia ad adipisci repudiandae aut? Consectetur earum quasi, illo expedita saepe minima et officia enim hic mollitia iusto quia voluptatem ut totam, neque velit ad, eveniet dicta cupiditate vitae temporibus tempora corporis eos animi! Deleniti tempore, facilis quod, incidunt magnam placeat debitis a tenetur minima sint, voluptas? Impedit non voluptatem alias ducimus eos quaerat excepturi temporibus possimus libero pariatur magni, accusantium ratione nostrum harum ad nesciunt quasi illo ab nulla, nihil. Ullam molestiae, ab nam in officiis odit qui a repellendus iure animi recusandae delectus perferendis ratione accusamus reiciendis illo at nobis eaque nesciunt doloribus facilis fugit id sapiente! Ipsum non, laudantium odio culpa dicta dolorem ducimus adipisci eaque ea et tempore voluptate exercitationem reiciendis sapiente dolores voluptates aliquid alias optio, repudiandae error? Atque at sint vel debitis a sequi nihil culpa et in rem quia placeat inventore dolores assumenda quae iste, commodi quo ratione vero est. Fugit fuga sint quod maxime nesciunt aperiam distinctio ex harum numquam! Labore nisi, facere, provident amet veritatis deleniti at blanditiis placeat minima eum soluta voluptate doloremque, quas. Corrupti ea placeat delectus minima quasi in optio dolores architecto. Totam harum iusto consectetur. Natus, saepe, temporibus?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+	</div>
+</section>
+<!--Modal end-->
+
+
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
